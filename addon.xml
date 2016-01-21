@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.weather.meteo.lt" name="Lithuanian Hydrometeorological Service" version="0.1" provider-name="Vytautas Mickus">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+  </requires>
+  <extension point="xbmc.python.weather" library="default.py"/>
+  <extension point="xbmc.addon.metadata"> 
+    <summary lang="en">Weather forecast from meteo.lt</summary>
+    <summary lang="lt">Orų prognozė iš meteo.lt</summary>
+    <language>lt</language>
+    <platform>all</platform>
+    <license>GPLv2</license>
+    <email>vmickus@gmail.com</email>
+    <source>https://github.com/Vytax/plugin.weather.meteo.lt</source>
+  </extension>
+</addon>
