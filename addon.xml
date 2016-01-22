@@ -8,7 +8,7 @@
   <extension point="xbmc.python.weather" library="default.py"/>
   <extension point="xbmc.addon.metadata"> 
     <summary lang="en">Weather forecast from meteo.lt</summary>
-    <summary lang="lt">Orų prognozė iš meteo.lt</summary>
+    <summary lang="lt_LT">Orų prognozė iš meteo.lt</summary>
     <language>lt</language>
     <platform>all</platform>
     <license>GPLv2</license>

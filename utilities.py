@@ -11,37 +11,37 @@ import math
 
 def winddir(deg):
     if deg >= 12 and deg <= 34:
-        wind = 'NNE'
+        wind = 0
     elif deg >= 35 and deg <= 56:
-        wind = 'NE'
+        wind = 1
     elif deg >= 57 and deg <= 79:
-        wind = 'ENE'
+        wind = 2
     elif deg >= 80 and deg <= 101:
-        wind = 'E'
+        wind = 3
     elif deg >= 102 and deg <= 124:
-        wind = 'ESE'
+        wind = 4
     elif deg >= 125 and deg <= 146:
-        wind = 'SE'
+        wind = 5
     elif deg >= 147 and deg <= 169:
-        wind = 'SSE'
+        wind = 6
     elif deg >= 170 and deg <= 191:
-        wind = 'S'
+        wind = 7
     elif deg >= 192 and deg <= 214:
-        wind = 'SSW'
+        wind = 8
     elif deg >= 215 and deg <= 236:
-        wind = 'SW'
+        wind = 9
     elif deg >= 237 and deg <= 259:
-        wind = 'WSW'
+        wind = 10
     elif deg >= 260 and deg <= 281:
-        wind = 'W'
+        wind = 11
     elif deg >= 282 and deg <= 304:
-        wind = 'WNW'
+        wind = 12
     elif deg >= 305 and deg <= 326:
-        wind = 'NW'
+        wind = 13
     elif deg >= 327 and deg <= 349:
-        wind = 'NNW'
+        wind = 14
     else:
-        wind = 'N'
+        wind = 15
     return wind
 
 #### thanks to FrostBox @ http://forum.xbmc.org/showthread.php?p=937168#post937168

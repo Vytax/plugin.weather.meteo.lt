@@ -1,0 +1,112 @@
+# XBMC Media Center language file
+# Addon Name: Lithuanian Hydrometeorological Service
+# Addon id: plugin.weather.meteo.lt
+# Addon version: 0.1
+# Addon Provider: vytax
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/lt_LT/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Language: lt_LT\n"
+"X-Source-Language: C\n"
+
+msgctxt "#30000"
+msgid "Location setup"
+msgstr "Vietovės nustatymai"
+
+msgctxt "#30001"
+msgid "Location 1"
+msgstr "Vietovė 1"
+
+msgctxt "#30002"
+msgid "Location 2"
+msgstr "Vietovė 2"
+
+msgctxt "#30003"
+msgid "Location 3"
+msgstr "Vietovė 3"
+
+msgctxt "#30004"
+msgid "Location 4"
+msgstr "Vietovė 4"
+
+msgctxt "#30005"
+msgid "Location 5"
+msgstr "Vietovė 5"
+
+msgctxt "#30100"
+msgid "NNE"
+msgstr "ŠŠR"
+
+msgctxt "#30101"
+msgid "NE"
+msgstr "ŠR"
+
+msgctxt "#30102"
+msgid "ENE"
+msgstr "RŠR"
+
+msgctxt "#30103"
+msgid "E"
+msgstr "R"
+
+msgctxt "#30104"
+msgid "ESE"
+msgstr "RPR"
+
+msgctxt "#30105"
+msgid "SE"
+msgstr "PR"
+
+msgctxt "#30106"
+msgid "SSE"
+msgstr "PPR"
+
+msgctxt "#30107"
+msgid "S"
+msgstr "P"
+
+msgctxt "#30108"
+msgid "SSW"
+msgstr "PPV"
+
+msgctxt "#30109"
+msgid "SW"
+msgstr "PV"
+
+msgctxt "#30110"
+msgid "WSW"
+msgstr "VPV"
+
+msgctxt "#30111"
+msgid "W"
+msgstr "V"
+
+msgctxt "#30112"
+msgid "WNW"
+msgstr "VŠV"
+
+msgctxt "#30113"
+msgid "NW"
+msgstr "ŠV"
+
+msgctxt "#30114"
+msgid "NNW"
+msgstr "ŠŠV"
+
+msgctxt "#30115"
+msgid "N"
+msgstr "Š"
+
+msgctxt "#30116"
+msgid "na"
+msgstr ""

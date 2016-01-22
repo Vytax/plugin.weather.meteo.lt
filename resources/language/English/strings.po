@@ -1,0 +1,111 @@
+# XBMC Media Center language file
+# Addon Name: Lithuanian Hydrometeorological Service
+# Addon id: plugin.weather.meteo.lt
+# Addon version: 0.1
+# Addon Provider: vytax
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "Location setup"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Location 1"
+msgstr ""
+
+
+msgctxt "#30002"
+msgid "Location 2"
+msgstr ""
+
+msgctxt "#30003"
+msgid "Location 3"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Location 4"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Location 5"
+msgstr ""
+
+msgctxt "#30100"
+msgid "NNE"
+msgstr ""
+
+msgctxt "#30101"
+msgid "NE"
+msgstr ""
+
+msgctxt "#30102"
+msgid "ENE"
+msgstr ""
+
+msgctxt "#30103"
+msgid "E"
+msgstr ""
+
+msgctxt "#30104"
+msgid "ESE"
+msgstr ""
+
+msgctxt "#30105"
+msgid "SE"
+msgstr ""
+
+msgctxt "#30106"
+msgid "SSE"
+msgstr ""
+
+msgctxt "#30107"
+msgid "S"
+msgstr ""
+
+msgctxt "#30108"
+msgid "SSW"
+msgstr ""
+
+msgctxt "#30109"
+msgid "SW"
+msgstr ""
+
+msgctxt "#30110"
+msgid "WSW"
+msgstr ""
+
+msgctxt "#30111"
+msgid "W"
+msgstr ""
+
+msgctxt "#30112"
+msgid "WNW"
+msgstr ""
+
+msgctxt "#30113"
+msgid "NW"
+msgstr ""
+
+msgctxt "#30114"
+msgid "NNW"
+msgstr ""
+
+msgctxt "#30115"
+msgid "N"
+msgstr ""
+
+msgctxt "#30116"
+msgid "na"
+msgstr ""

@@ -263,7 +263,7 @@ def getData(locid, lang):
       data['WindDirection'] = utilities.winddir(windDirectionGroundDegree)
     except:
       data['WindSpeed'] = ''
-      data['windDirectionGroundDegree'] = ''
+      data['windDirectionGroundDegree'] = 16
       data['WindDirection'] = ''
     
     days[i] = data

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-  <category label="Location setup">
-    <setting id="Location1" label="Location 1" type="action" action="RunScript($ID,Location1)" default=""/>
-    <setting id="Location2" label="Location 2" type="action" action="RunScript($ID,Location2)" enable="!eq(-1,)" default=""/>
-    <setting id="Location3" label="Location 3" type="action" action="RunScript($ID,Location3)" enable="!eq(-1,)" default=""/>
-    <setting id="Location4" label="Location 4" type="action" action="RunScript($ID,Location4)" enable="!eq(-1,)" default=""/>
-    <setting id="Location5" label="Location 5" type="action" action="RunScript($ID,Location5)" enable="!eq(-1,)" default=""/>
+  <category label="30000">
+    <setting id="Location1" label="30001" type="action" action="RunScript($ID,Location1)" default=""/>
+    <setting id="Location2" label="30002" type="action" action="RunScript($ID,Location2)" enable="!eq(-1,)" default=""/>
+    <setting id="Location3" label="30003" type="action" action="RunScript($ID,Location3)" enable="!eq(-1,)" default=""/>
+    <setting id="Location4" label="30004" type="action" action="RunScript($ID,Location4)" enable="!eq(-1,)" default=""/>
+    <setting id="Location5" label="30005" type="action" action="RunScript($ID,Location5)" enable="!eq(-1,)" default=""/>
     <setting id="Location1id" type="text" visible="false" default=""/>
     <setting id="Location2id" type="text" visible="false" default=""/>
     <setting id="Location3id" type="text" visible="false" default=""/>

@@ -61,9 +61,9 @@ def forecast(loc, locid):
   set_property('Current.FeelsLike', data['FeelsLike'])
   set_property('Current.Humidity', data['Humidity'])
   set_property('Current.Wind', data['Wind'])
-  set_property('Current.WindDirection', data['WindDirection'])
+  set_property('Current.WindDirection', ADDON.getLocalizedString(30100 + data['WindDirection']))
   set_property('Current.DewPoint', data['DewPoint'])
-  set_property('Current.Precipitation', data['Precipitation'])
+  set_property('Current.Precipitation', data['Precipitation'])  
 
   for i in range(1,25):
     
@@ -81,7 +81,7 @@ def forecast(loc, locid):
       set_property('Hourly.%d.Humidity' % i, hour['Humidity'])
       set_property('Hourly.%d.Precipitation' % i, hour['Precipitation'])
       set_property('Hourly.%d.WindSpeed' % i, hour['WindSpeed'] + ' km/h')
-      set_property('Hourly.%d.WindDirection' % i, hour['WindDirection'])
+      set_property('Hourly.%d.WindDirection' % i, ADDON.getLocalizedString(30100 + hour['WindDirection']))
       
   for i in range(1,15):
     
@@ -96,7 +96,7 @@ def forecast(loc, locid):
       set_property('Daily.%d.LowTemperature' % i, day['LowTemperature'])
       set_property('Daily.%d.HighTemperature' % i, day['HighTemperature'])
       set_property('Daily.%d.WindSpeed' % i, day['WindSpeed'])
-      set_property('Daily.%d.WindDirection' % i, day['WindDirection'])
+      set_property('Daily.%d.WindDirection' % i, ADDON.getLocalizedString(30100 + day['WindDirection']))
 
   set_property('Current.IsFetched'  , 'true')
   set_property('Hourly.IsFetched'   , 'true')
