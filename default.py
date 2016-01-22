@@ -11,6 +11,7 @@ ADDONID      = ADDON.getAddonInfo('id')
 
 WEATHER_WINDOW = xbmcgui.Window(12600)
 WEATHER_ICON = xbmc.translatePath('special://temp/weather/%s.png')
+LANGUAGE = xbmc.getLanguage().lower()
 
 def set_property(name, value):
   WEATHER_WINDOW.setProperty(name, str(value))
@@ -44,7 +45,11 @@ def clear():
   
 def forecast(loc, locid):
 
-  data = meteo.getData(locid)
+  lang = ''
+  if LANGUAGE == 'lithuanian':
+    lang = 'lt_LT'
+    
+  data = meteo.getData(locid, lang)
 
   set_property('Current.Location' , loc)
   set_property('Forecast.City' , data['location'])

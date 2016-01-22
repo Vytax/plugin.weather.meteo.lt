@@ -15,7 +15,7 @@ from difflib import SequenceMatcher
 
 import utilities
 
-METEO_URL = 'http://www.meteo.lt/lt_LT/miestas?placeCode=%s'
+METEO_URL = 'http://www.meteo.lt/%s/miestas?placeCode=%s'
 METEO_CITIES_URL = 'https://pro.meteo.lt/dataweb/places/listAllPlaces'
 
 WEATHER_CODES = { 'ic-giedra'   : 32,
@@ -147,14 +147,17 @@ def readCondition(tag):
   
   return 'na'
 
-def getData(locid):
+def getData(locid, lang):
   
   result = {}
   
   if not locid:
     locid = 'kaunas'
   
-  html = getURL(METEO_URL % locid)  
+  if not lang:
+    lang = 'en_US'
+  
+  html = getURL(METEO_URL % (lang, locid))  
   soup = BeautifulSoup(html, 'html.parser')
   
   weather_info = soup.find_all('div', class_='weather_info')[0]
