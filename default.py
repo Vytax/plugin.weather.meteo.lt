@@ -8,9 +8,14 @@ import libmeteo as meteo
 ADDON        = xbmcaddon.Addon()
 ADDONNAME    = ADDON.getAddonInfo('name')
 ADDONID      = ADDON.getAddonInfo('id')
+KODI_VERSION = int(xbmc.getInfoLabel( "System.BuildVersion" )[0:2])
 
 WEATHER_WINDOW = xbmcgui.Window(12600)
-WEATHER_ICON = xbmc.translatePath('special://temp/weather/%s.png')
+
+if KODI_VERSION < 16:
+  WEATHER_ICON = xbmc.translatePath('special://temp/weather/%s.png')
+else:
+  WEATHER_ICON = '%s.png'
 LANGUAGE = xbmc.getLanguage().lower()
 
 def set_property(name, value):
