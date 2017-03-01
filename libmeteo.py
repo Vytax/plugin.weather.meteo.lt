@@ -220,7 +220,7 @@ def getData(locid, lang):
     
     
   days = {}  
-  m7days_weather = soup.find_all('div', class_='7days_weather')[0]
+  m7days_weather = soup.find_all('div', class_='seven_days_weather')[0]
   forecast_days = m7days_weather.find_all('div', class_='forecast-day')
   
   for i, day in enumerate(forecast_days):
