@@ -16,7 +16,6 @@ from difflib import SequenceMatcher
 import utilities
 
 METEO_URL = 'http://www.meteo.lt/%s/miestas?placeCode=%s'
-METEO_CITIES_URL = 'https://pro.meteo.lt/dataweb/places/listAllPlaces'
 
 WEATHER_CODES = { 'ic-giedra'   : 32,
 		  'ic-giedra-2' : 31,
@@ -275,25 +274,18 @@ def getData(locid, lang):
 def isSimilar(a, b):
     return (SequenceMatcher(None, a, b).ratio() > 0.8)
   
-def getCities(key = None):
+def getCities(fp, key = None):
   
   if key:
     key = key.strip().lower()
   
   result = []
   
-  data = json.loads(getURL(METEO_CITIES_URL))
+  data = json.load(fp)
   
   for city in data:
     
-    city_id = city['id'].split(':')
-    
-    if city_id[0] == 'lt.lhms.metis':
-      
-      city['id'] = city_id[1]
-      name = city['name'].split('(')[0].strip().lower()
-      
-      if not key or isSimilar(key, name):
+      if not key or isSimilar(key, city['name']):
 	result.append(city)    
   
   return result

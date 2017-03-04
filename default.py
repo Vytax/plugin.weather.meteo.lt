@@ -116,12 +116,13 @@ if sys.argv[1].startswith('Location'):
     
     text = keyboard.getText()
     
-    locations = meteo.getCities(text)
+    citiesFile = xbmc.translatePath(ADDON.getAddonInfo('path')+'/resources/cities.json')    
+    locations = meteo.getCities(open(citiesFile, 'r'), text)
     
     names = []
     
     for location in locations:
-      names.append(location['name'])
+      names.append(location['fullName'])
       
     dialog = xbmcgui.Dialog()
     if names:
